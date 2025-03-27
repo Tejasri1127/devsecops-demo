@@ -79,7 +79,7 @@ jobs:
     needs: [build]
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: ${{https://github.com/Tejasri1127/devsecops-demo.git }}
+      IMAGE_NAME: ${{github.repository}}
     outputs:
       image_tag: ${{ steps.set_output.outputs.image_tag }}
     steps:
